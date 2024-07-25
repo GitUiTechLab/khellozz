@@ -1,0 +1,1666 @@
+/*
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+** - Default CSS 
+** - Preloader CSS 
+** - Button CSS 
+** - Background-color CSS 
+** - Color CSS 
+** - Slick CSS
+** - Navbar Area CSS
+** - Registration Area CSS
+** - Feedback Area CSS 
+** - Home slider CSS 
+** - About Area CSS 
+** - Events Area CSS 
+** - Gallery Area CSS 
+** - Modal CSS 
+** - Contestants Area CSS 
+** - Videos Area CSS 
+** - Media Area CSS 
+** - Blog Area CSS 
+** - Testimonial Area CSS 
+** - Contact Area CSS 
+** - FAQs Area CSS 
+** - Player Achievements Area CSS 
+** - Footer Area CSS 
+
+*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*==============================
+    Default CSS
+=================================*/
+
+:root {
+
+    /* Colors */
+    --primary-color1: #870D23;
+    --primary-color2: #CB2B48;
+    --primary-color3: #FF5473;
+    --primary-color4: #FF879D;
+    --primary-color5: #FFBAC7;
+    --primary-color6: #FFEEF1;
+    --secondary-color1: #4E9749;
+    --secondary-color2: #CCFFC9;
+    --secondary-color3: #F9EE4F;
+    --secondary-color4: #FFF99F;
+    --secondary-color5: #562C83;
+    --secondary-color6: #DBBAFF;
+    --gray-color1: #2A2A44;
+    --gray-color2: #919299;
+    --gray-color3: #C4C4D6;
+    --gray-color4: #F6F4FC;
+    --gray-color5: #FFFFFF;
+
+    /* Body font */
+    --body-font1: 16px;
+    --body-line-height1: 24px;
+    --body-font2: 18px;
+    --body-line-height2: 28px;
+    --body-font3: 14px;
+    --body-line-height3: 20px;
+    --body-font4: 24px;
+    --body-line-height4: 32px;
+
+    /* box-shadow */
+    --box-shadow1: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow2: 0 4px 8px rgba(0, 0, 0, 0.5);
+    --box-shadow3: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+a {
+    display: inline-block;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 64px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.mb-10 {
+    margin-bottom: 5rem;
+}
+
+.mt-5 {
+    margin: 3rem 0 0 0;
+}
+
+.default-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/******* card-container ******/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25rem;
+    margin: 1rem auto;
+    box-shadow: var(--box-shadow1);
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow2);
+}
+
+.card img {
+    padding: 1rem;
+}
+
+.card-body a {
+    color: var(--primary-color3);
+}
+
+/******* outline ******/
+
+.outline {
+    position: relative;
+    border-bottom: 0px solid transparent;
+}
+
+.outline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color3);
+    transition: width 0.3s ease-in-out;
+}
+
+.outline:hover::after {
+    width: 100%;
+}
+
+/****** section heading ******/
+
+.heading div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading p {
+    font-size: var(--body-font2);
+}
+
+.heading a {
+    color: var(--primary-color2);
+}
+
+.heading a:hover {
+    text-shadow: 1px .5px var(--primary-color1);
+}
+
+/*==============================
+    Default CSS End
+=================================*/
+
+/*==============================
+    Preloader CSS
+=================================*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    background: var(--primary-color3);
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pre-img {
+    text-align: center;
+}
+
+.pre-img img {
+    margin-bottom: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.spinner {
+    margin: 0 auto;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    display: inline-block;
+    animation: circle-in 1.4s infinite ease-in-out both;
+}
+
+.spinner .circle1 {
+    animation-delay: -0.32s;
+}
+
+.spinner .circle2 {
+    animation-delay: -0.16s;
+}
+
+@keyframes circle-in {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
+
+/*==============================
+    Preloader CSS End
+  =================================*/
+
+/*==============================
+    Button CSS 
+  =================================*/
+.btn-white {
+    background-color: #fff;
+    color: var(--primary-color2);
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: none;
+}
+
+.btn-white::after {
+    content: attr(data-text);
+    font-weight: 600;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.btn-white:hover {
+    background-color: var(--primary-color6);
+    color: var(--primary-color2);
+    font-weight: 600;
+}
+
+.btn-red {
+    background-color: var(--primary-color2);
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border: 2px solid var(--primary-color2);
+}
+
+.btn-red::after {
+    content: attr(data-text);
+    font-weight: 600;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.btn-red:hover {
+    background-color: var(--primary-color1);
+    border: 2px solid var(--primary-color1);
+    font-weight: 600;
+}
+
+.btn-trans {
+    background-color: transparent;
+    color: var(--primary-color2);
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    text-align: center;
+    border: 2px solid var(--primary-color2);
+}
+
+.btn-trans:hover {
+    background-color: var(--primary-color2);
+    color: #fff;
+}
+
+.btn-trans i.fa-arrow-right-long {
+    font-size: var(--body-font2);
+    transform: rotate(-30deg);
+}
+
+/*==============================
+    Button CSS End
+  =================================*/
+
+/*==============================
+    Background-color CSS
+  =================================*/
+
+.bg-pink {
+    background-color: var(--primary-color6);
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-trans {
+    background-color: transparent;
+}
+
+/*==============================
+    Background-color CSS End
+  =================================*/
+
+/*==============================
+    Color CSS
+  =================================*/
+
+.color-red {
+    color: red;
+}
+
+.color-primary2 {
+    color: var(--primary-color2);
+}
+
+.color-gray {
+    color: gray;
+}
+
+/*==============================
+    Color CSS End
+  =================================*/
+
+/*==============================
+    Slick CSS 
+  =================================*/
+
+.slick-dots li {
+
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li button {
+    background-color: var(--primary-color4);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.slick-dots li button::before {
+    font-size: 0;
+}
+
+.slick-dots .slick-active button {
+    border-color: var(--primary-color2);
+    background-color: var(--primary-color2);
+}
+
+/*==============================
+    Slick CSS End
+  =================================*/
+
+/*=================================
+    Navbar Area CSS
+====================================*/
+.navbar {
+    background-color: var(--primary-color2);
+    padding: 0;
+    box-shadow: var(--box-shadow1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .container-fluid {
+    padding: 0 3rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    position: relative;
+    margin: auto 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .btn {
+    background-color: #fff;
+    color: var(--primary-color2);
+    margin: auto 1rem;
+}
+
+/*=================================
+    Navbar Area CSS End
+====================================*/
+
+/*=================================
+    Registration Area CSS 
+====================================*/
+
+.registration-area .bar {
+    height: 12px;
+    width: 30%;
+    background-color: #D9D9D9;
+    border-radius: 6px;
+}
+
+.registration-area .bar-fill {
+    background-color: green;
+}
+
+.registration-area .sports-list-area {
+    box-shadow: var(--box-shadow3);
+}
+
+.sports-list-area .sports-list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports-list-area .sports-list div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    text-align: center;
+}
+
+.sports-list-area .sports-list span {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.registration-area form .row div input,
+.registration-area form .row div .form-select,
+.registration-area form .row div .expiry-date {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100vw;
+    /* table-layout: fixed; */
+}
+
+.registration-area table input {
+    border: none !important;
+    outline: none;
+    text-align: center;
+}
+
+.registration-area .table thead th {
+    background-color: #f8f8f8;
+}
+
+.registration-area .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.registration-area .table td {
+    padding: 0;
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.col-no {
+    width: 50px;
+}
+
+.removeRowButton {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 2rem;
+}
+
+.removeRowButton:hover {
+    background-color: #d32f2f;
+}
+
+.add-btn {
+    border: none;
+}
+
+.registration-area .payment-method {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.registration-area .payment-method>label {
+    display: flex;
+    justify-content: space-between;
+    width: 18rem;
+}
+
+.registration-area .payment-method>label div {
+    border: 2px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.8rem 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registration-area .payment-method div img {
+    height: 35px !important;
+    margin-bottom: 1rem;
+}
+
+.registration-area .payment-method div span {
+    color: gray;
+}
+
+.payment-method input[type="radio"] {
+    display: none;
+}
+
+.payment-method input[type="radio"]:checked+div {
+    border-color: var(--primary-color2);
+    background-color: var(--primary-color6);
+}
+
+.expiry-date select {
+    border: none;
+    outline: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.success-popup {
+    background-color: #fff;
+    box-shadow: var(--box-shadow1);
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.success-popup .close {
+    position: absolute;
+    right: 0;
+    top: -15%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+/*=================================
+    Registration Area CSS End
+====================================*/
+
+/*=================================
+    Feedback Area CSS 
+====================================*/
+.bg-primary2 {
+    background-color: var(--primary-color2);
+    color: #fff;
+    padding: 1.5rem;
+    text-align: right;
+}
+
+.feedback-area {
+    height: 80vh;
+}
+
+.feedback-area i {
+    font-size: 3rem;
+    margin: 1rem 1rem 1rem 0;
+    cursor: pointer;
+    color: var(--gray-color3);
+}
+
+.feedback-area form .row div input,
+.feedback-area form .row div textarea {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.feedback-area input[type="radio"] {
+    display: none;
+}
+
+.feedback-area input[type="radio"]:checked+i {
+    color: var(--primary-color2);
+}
+
+.feedback-area img {
+    margin-left: 3rem;
+}
+
+/*=================================
+    Feedback Area CSS End
+====================================*/
+
+/*=================================
+    Home slider CSS 
+====================================*/
+.carousel-indicators [data-bs-target] {
+    background-color: var(--primary-color2);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target].active {
+    width: 50px;
+    border-radius: 13px;
+}
+
+.banner-area .carousel-item button {
+    position: relative;
+    bottom: -40px;
+}
+
+.banner-area .carousel-caption {
+    color: #000;
+    right: 25%;
+    left: 25%;
+    bottom: 0;
+}
+
+.banner-content2 {
+    background-color: hsla(0, 0%, 88%, 0.6);
+    height: 60vh;
+    text-align: start;
+    padding: 3rem;
+}
+
+.banner-content3 {
+    height: 60vh;
+    text-align: start;
+    padding: 3rem;
+    color: #fff !important;
+}
+
+/*=================================
+    Home slider CSS End
+====================================*/
+
+/*=================================
+    About Area CSS 
+====================================*/
+.about-area .container-fluid {
+    background: url(../img/patterns/pattern1.png);
+}
+
+.about-area .content1,
+.about-area .content2 {
+    text-align: justify;
+}
+
+.about-area .content1 .text {
+    position: relative;
+    text-align: justify;
+}
+
+.about-area .content2 .text {
+    position: relative;
+    text-align: justify;
+}
+
+.about-area .text p {
+    font-size: var(--body-font2);
+}
+
+.about-area .text button {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+.about-area .content1 .img,
+.about-area .content2 .img {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    height: 80vh;
+}
+
+.about-area .content1 .img {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.about-area .content2 .img {
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.about-area .content1 .img::before,
+.about-area .content2 .img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.about-area .content1 .img::before {
+    background: url(../img/about/1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.about-area .content2 .img::before {
+    background: url(../img/about/2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.about-area .content1 .img img,
+.about-area .content2 .img img {
+    height: 60vh;
+    width: 35vw;
+    transition: height .5s ease-in-out, width .5s ease-in-out;
+}
+
+.about-area .content1 .img img:hover,
+.about-area .content2 .img img:hover {
+    height: 100%;
+    width: 100%;
+}
+
+.about-area .content3 {
+    background: url(../img/patterns/pattern3.png);
+    text-align: justify;
+}
+
+.about-area .content4 {
+    background: url(../img/patterns/pattern4.png);
+    text-align: justify;
+}
+
+/*=================================
+    About Area CSS End
+====================================*/
+
+/*=================================
+    Events Area CSS  
+====================================*/
+.events-area {
+    background: url(../img/patterns/pattern5.png);
+}
+
+.events-area .carousel-control-prev,
+.events-area .carousel-control-next {
+    width: 8%;
+}
+
+.events-area .content .left {
+    position: relative;
+    background-color: #000;
+    z-index: 1;
+    color: #fff;
+    padding: 6rem;
+}
+
+.events-area .content .left::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.events-area .content1 .left::before {
+    background: url(../img/events/1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.events-area .content2 .left::before {
+    background: url(../img/events/2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.events-area .content3 .left::before {
+    background: url(../img/events/3.png) center center no-repeat;
+    background-size: cover;
+}
+
+.events-area .left p {
+    font-size: var(--body-font2);
+}
+
+.events-area .left button {
+    position: relative;
+    bottom: -100%;
+}
+
+.events-area .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color6);
+}
+
+.events-area .card img {
+    height: 130px;
+    width: 130px;
+}
+
+.events-area .time-counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-area .time-counter div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.events-area .time-counter .timer-box {
+    background-color: #f3b062;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+/*=================================
+    Events Area CSS End
+====================================*/
+
+/*=================================
+    Gallery Area CSS 
+====================================*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    grid-template-areas:
+        "b-1 b-2 b-2"
+        "b-1 b-3 b-4"
+        "b-5 b-5 b-4"
+        "b-5 b-5 b-6"
+}
+
+#b-1, #b-7 {
+    grid-area: b-1;
+}
+
+#b-2, #b-8 {
+    grid-area: b-2;
+}
+
+#b-3, #b-9 {
+    grid-area: b-3;
+}
+
+#b-4, #b-10 {
+    grid-area: b-4;
+}
+
+#b-5, #b-11 {
+    grid-area: b-5;
+}
+
+#b-6, #b-12 {
+    grid-area: b-6;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+}
+
+.img-data-icons {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    font-size: var(--body-font2);
+}
+
+.img-data-icons i {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    color: #000;
+    cursor: pointer;
+}
+
+.img-data-icons i:hover {
+    background-color: var(--primary-color3);
+    color: #fff;
+}
+
+.left-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.right-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.gallery-area2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-area2 img {
+    cursor: pointer;
+    box-shadow: var(--box-shadow1);
+}
+
+.gallery-area2 img:hover {
+    box-shadow: var(--box-shadow2);
+}
+
+.gallery-area2 .modal .modal-content {
+    width: 80%;
+    max-width: 600px;
+}
+
+.gallery-area2 .img-data-icons {
+    font-size: var(--body-font1);
+}
+.gallery-area2 .img-data-icons i {
+    padding: .5rem;
+}
+/*=================================
+    Gallery Area CSS End
+====================================*/
+
+/*=================================
+    Modal CSS 
+====================================*/
+.toZoom {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 500px;
+    /* max-width: 600px; */
+}
+
+.modal .modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal .modal-content {
+        width: 90%;
+    }
+}
+
+/*=================================
+    Modal CSS End
+====================================*/
+
+/*=================================
+    Contestants Area CSS 
+====================================*/
+.center {
+    width: 100%;
+    margin: auto;
+}
+
+.center img {
+    margin: 2rem auto;
+    width: 200px !important;
+    opacity: .85;
+}
+
+.slick-center img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.center .slick-list {
+    padding: 0 !important;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+.image-container h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.contestants-video {
+    width: 78%;
+    height: 79vh;
+    margin: 2rem auto;
+}
+
+.contestants-video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contestants-area2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contestants-banner {
+    position: relative;
+}
+
+.contestants-banner .heading {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    margin: auto;
+}
+/*=================================
+    Contestants Area CSS End
+====================================*/
+
+/*=================================
+    Videos Area CSS 
+====================================*/
+
+.videos-area .card {
+    border: none;
+}
+
+.videos-area video {
+    height: 50vh;
+    width: 100%;
+}
+
+/*=================================
+    Videos Area CSS End
+====================================*/
+
+/*=================================
+    Media Area CSS 
+====================================*/
+
+.media-area .card {
+    box-shadow: var(--box-shadow1);
+    margin: 1rem;
+}
+
+.media-area .card:hover {
+    box-shadow: var(--box-shadow2);
+}
+
+.media-area .card-date {
+    color: gray;
+}
+
+.media-area .card img {
+    cursor: pointer;
+}
+
+/*=================================
+    Media Area CSS End
+====================================*/
+/*=================================
+    Blog Area CSS 
+====================================*/
+
+.blog-area .home-blog-heading div {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.blog-area .home-blog-heading h2 {
+    display: inline-block;
+    margin: .5rem;
+    color: var(--primary-color6);
+}
+
+.blog-area .home-blog-heading h2:first-child {
+    color: var(--primary-color2);
+}
+
+.blog-area .card-info {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+.blog-area .content .card-info {
+    width: 100%;
+    color: gray;
+}
+
+.blog-area .content {
+    text-align: justify;
+}
+
+/*=================================
+    Blog Area CSS End
+====================================*/
+
+/*=================================
+    Testimonial Area CSS 
+====================================*/
+
+.testimonial-area {
+    position: relative;
+}
+
+.testimonial-area .quote {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.testimonial-area h2 {
+    text-align: center !important;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.testimonial-card-content {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow1);
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+}
+
+.testimonial-card h5 {
+    margin-bottom: 0;
+}
+
+.testimonial-card-author {
+    display: flex;
+}
+
+/*=================================
+    Testimonial Area CSS End
+====================================*/
+
+/*=================================
+    Contact Area CSS 
+====================================*/
+
+.contact-area .home-content {
+    box-shadow: var(--box-shadow3);
+}
+
+.contact-area .contact-form,
+.contact-area .contact-info {
+    padding: 3rem;
+}
+
+.contact-area .contact-form input,
+.contact-area .contact-form .form-select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 0;
+    padding: .5rem 0;
+    width: 100%;
+    outline: none;
+}
+
+.contact-area .contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+
+.contact-banner {
+    position: relative;
+}
+
+.contact-page .heading {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    margin: auto;
+    transform: translate(30%, -30%);
+}
+
+.contact-page .content .contact-div1 {
+    position: relative;
+    left: 2%;
+    top: 100px;
+}
+
+.contact-page .content .contact-div2 {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+    box-shadow: var(--box-shadow3);
+    left: 5%;
+    top: 20px;
+    padding: 3rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.contact-page .content .contact-div2 input,
+.contact-page .content .contact-div2 textarea {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin: .5rem 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-page .contact-map iframe {
+    box-shadow: var(--box-shadow1);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/*=================================
+    Contact Area CSS End
+====================================*/
+
+/*=================================
+    FAQs Area CSS 
+====================================*/
+
+.faq-area .wrapper .container {
+    width: 50%;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow3);
+    margin: 20px auto;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.question.active::after {
+    transform: rotate(45deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
+}
+
+/*=================================
+    FAQs Area CSS End
+====================================*/
+
+/*=================================
+    Player Achievements Area CSS 
+====================================*/
+
+.player-achievements-area .player-card {
+    width: 19rem;
+    position: relative;
+}
+
+.player-achievements-area a {
+    color: #000;
+}
+
+.player-grp-logo {
+    width: 40%;
+    background-color: var(--primary-color2);
+    color: #fff;
+    text-align: center;
+    padding: .5rem 1rem;
+    /* border-radius: 10px 0 0 10px; */
+    border-radius: 10px 0 0 0;
+    position: absolute;
+    /* top: 160px; */
+    top: 170px;
+    right: 0;
+}
+
+.player-achievements-area .player-data {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.player-achievements-area .player-data div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.player-achievements-area .player-data span {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+/*=================================
+    Player Achievements Area CSS End
+====================================*/
+
+/*=================================
+    Footer Area CSS 
+====================================*/
+
+.footer-area {
+    margin-top: 120px;
+}
+
+.footer-contact {
+    position: relative;
+    top: -60px;
+}
+
+.newsletter-area {
+    background-color: var(--primary-color2);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2rem 5rem 0.1rem 5rem;
+}
+
+.footer-area .footer-logo {
+    height: 100px;
+}
+
+.newsletter-form {
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+    color: #fff;
+}
+
+.newsletter-area input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-area a,
+.footer-area i {
+    color: var(--primary-color2);
+}
+
+.footer-area a i {
+    font-size: var(--body-font2);
+    margin: 0 1rem 0 0;
+}
+
+.footer-list li {
+    margin: 10px 0;
+}
+
+.footer-link-drop {
+    display: none;
+}
+
+.accordion label {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.accordion label::before {
+    content: '+';
+    font-size: 24px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    border-left: 4px solid var(--color-primary5);
+    max-height: 0;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 100%;
+    padding: 10px;
+}
+
+.accordion input[type="radio"]:checked+label::before {
+    content: '-';
+}
+
+/*=================================
+    Footer Area CSS End
+====================================*/

@@ -1,0 +1,441 @@
+@media only screen and (max-width: 1199px) {
+    :root {
+        /* Body font */
+        --body-font1: 14px;
+        --body-line-height1: 22px;
+        --body-font2: 16px;
+        --body-line-height2: 24px;
+        --body-font3: 12px;
+        --body-line-height3: 18px;
+        --body-font4: 20px;
+        --body-line-height4: 28px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 1.8rem;
+    }
+
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 1.8rem;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 1.6rem;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 1.6rem;
+    }
+
+    h6 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 1.4rem;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 1.2rem;
+    }
+
+    .mt-5 {
+        margin-top: 2rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem !important;
+    }
+
+    /* FAQs */
+    .faq-area .wrapper .container {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    button {
+        position: static !important;
+    }
+
+    .p-5 {
+        padding: 2rem;
+    }
+
+    .mb-10 {
+        margin-bottom: 2rem;
+    }
+
+    .h-0 {
+        height: 0;
+    }
+
+    .default-content-text {
+        padding: 1rem;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .display-visible {
+        display: block !important;
+    }
+
+    .heading div {
+        align-items: center;
+    }
+
+    /* Card */
+    .card {
+        width: 20rem;
+        margin: .5rem auto;
+    }
+
+    .card img {
+        padding: .5rem;
+    }
+
+    /* Navbar */
+    .navbar .nav-link {
+        margin: .5rem;
+    }
+
+    .navbar .container-fluid {
+        padding: 0 1rem;
+    }
+
+    .navbar .container-fluid button {
+        margin-bottom: 1rem !important;
+    }
+
+    .navbar-collapse {
+        transition: transform 0.3s ease-out;
+        transform: translateX(100%);
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-collapse.collapsing {
+        transition: transform 0.3s ease-out;
+    }
+
+    /* Registration */
+    .registration-area .row .my-3 {
+        margin: .4rem 0 !important;
+    }
+
+    table {
+        table-layout: auto;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-container button {
+        margin: .5rem 0 !important;
+        width: 85vw !important;
+
+    }
+
+    .registration-area .sports-list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .registration-area .sports-list .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sports-list-area .sports-list {
+        flex-direction: column;
+    }
+
+    .sports-list-area .sports-list div {
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sports-list-area .sports-list span {
+        width: 33%;
+        text-align: center;
+    }
+
+    .registration-area .payment-method {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .registration-area .payment-method>label {
+        display: inline-block;
+        width: 24%;
+    }
+
+    .registration-area .payment-method>label div {
+        border-color: transparent;
+        padding: .5rem;
+    }
+
+    .registration-area .payment-method div img {
+        margin: 0;
+    }
+
+    .registration-area .payment-method div span {
+        display: none;
+    }
+
+    .success-popup {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    /* Feedback */
+    .feedback-area img {
+        display: none;
+    }
+
+    /* Home */
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    .banner-area .carousel-caption {
+        text-align: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        align-items: center;
+    }
+
+    .banner-content1,
+    .banner-content2 {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner-content1,
+    .banner-content2,
+    .banner-content3 {
+        color: #fff !important;
+        width: 100%;
+        padding: .5rem 1rem;
+    }
+
+    /* About */
+    .about-area .content1 {
+        flex-direction: column;
+    }
+
+    .about-area .content2 {
+        flex-direction: column-reverse;
+    }
+
+    .about-area .content1 .img,
+    .about-area .content2 .img {
+        height: 50vh;
+    }
+
+    .about-area .content1 .img img,
+    .about-area .content2 .img img {
+        height: 40vh;
+        width: 70vw;
+        transition: height .5s ease-in-out, width .5s ease-in-out;
+    }
+
+    /* Events */
+    .events-area .content .left {
+        padding: 6rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .events-area .left button {
+        position: static;
+    }
+
+    /* Gallery */
+    .gallery {
+        gap: .5rem;
+    }
+
+    .img-data-icons i {
+        padding: .5rem;
+        font-size: .6rem;
+    }
+
+    .left-icon {
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .right-icon {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    /* Contestants */
+    .center img {
+        margin: 2rem auto;
+        opacity: .85;
+    }
+
+    .contestants-banner .heading {
+        top: 10%;
+        left: 3%;
+        transform: translateX(0%);
+        color: #fff;
+        margin: auto;
+    }
+
+    /* testimonial */
+    .testimonial-area .quote {
+        height: 50px;
+        top: 120px;
+    }
+
+    /* Contact */
+    .contact-area .contact-form,
+    .contact-area .contact-info {
+        padding: 1rem;
+    }
+
+    .contact-page .content .contact-div1,
+    .contact-page .content .contact-div2 {
+        position: static;
+        padding: 1rem !important;
+        margin: 0;
+    }
+
+    /* FAQs */
+    .faq-area .wrapper .container {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .question {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .question::after {
+        font-size: 1.8rem;
+        right: 10px;
+    }
+
+    /* player-achievements */
+    .player-achievements-area .achieve-dtl-img {
+        width: 100% !important;
+    }
+
+    .player-achievements-area .player-data {
+        flex-direction: column;
+    }
+
+    .player-achievements-area .player-data div {
+        flex-direction: row;
+    }
+
+    .player-achievements-area .player-data span {
+        width: 50%;
+        text-align: start;
+    }
+
+    /* Footer */
+    .footer-area {
+        margin-top: 0px;
+    }
+
+    .footer-contact {
+        top: 10px;
+    }
+
+    .newsletter-area {
+        padding: 1rem 1rem 0 1rem;
+        margin: 2rem 0;
+    }
+
+    .newsletter-area button {
+        margin: 1rem 0;
+    }
+
+    .footer-link {
+        display: none;
+    }
+
+    .footer-link-drop {
+        display: block;
+    }
+
+    .footer-link-drop li {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        width: 18rem;
+    }
+
+    .default-content-text {
+        padding: 3rem;
+    }
+
+    /* Navbar */
+    .navbar .nav-link {
+        margin: .2rem;
+    }
+
+    /* About */
+    .about-area .content1 .img,
+    .about-area .content2 .img {
+        height: 45vh;
+    }
+
+    .about-area .content1 .img img,
+    .about-area .content2 .img img {
+        height: 30vh;
+        width: 35vw;
+        transition: height .5s ease-in-out, width .5s ease-in-out;
+    }
+
+    /* testimonial */
+    .testimonial-area .quote {
+        height: 80px;
+    }
+
+    /* FAQs */
+    .faq-area .wrapper .container {
+        width: 80%;
+    }
+
+    .contact-page .contact-info,
+    .contact-page .contact-form {
+        padding: 1.5rem !important;
+    }
+
+    /* Footer */
+    .footer-area {
+        margin-top: 80px;
+    }
+
+}
