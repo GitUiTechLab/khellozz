@@ -658,7 +658,7 @@
 <!-- Media Area End -->
 
 <!-- Blog Area -->
-<div class="blog-area py-5">
+{{--<div class="blog-area py-5">
     <div class="container-fluid">
         <div class="heading home-blog-heading">
             <div>
@@ -695,7 +695,7 @@
                         <h5 class="card-title">Lorem, ipsum dolor.</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Laboriosam, earum.</p>
-                        <a class="btn-trans w-100" href="{{route('page.blogdetail')}}"><span>Read More</span><i class="fa-solid fa-arrow-right-long ms-3"></i></a>
+                        <a class="btn-trans w-100" href="{{route('page.blogdetail',$data->slug)}}"><span>Read More</span><i class="fa-solid fa-arrow-right-long ms-3"></i></a>
                     </div>
                 </div>
             </div>
@@ -829,7 +829,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 <!-- Blog Area End -->
 
 <!-- Testimonial Area -->

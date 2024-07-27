@@ -10,12 +10,13 @@
                     for a Journey of Competition, Celebration, and Camaraderie.</p>
             </div>
             <div class="card-container">
+                @foreach ($events as $data)
                 <div class="card">
-                    <img height="100" width="100" src="{{asset('assets/img/events/e1.png')}}" class="card-img-top" alt="...">
+                    <img height="100" width="100" src="{{$data->imageUrl}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Foot Ball Championship</h5>
+                        <h5 class="card-title">{{ $data->title }} Championship</h5>
                         <p class="card-text">1st Feb to 3rd Feb</p>
-                        <p class="card-text">Bihta School Foot Ball Championship</p>
+                        <p class="card-text">{{$data->address}}</p>
                         <h6 class="color-primary2">Event Starts In:</h6>
                         <div class="time-counter">
                             <div>
@@ -40,7 +41,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                @endforeach
+                
+               {{--   <div class="card">
                     <img height="100" width="100" src="{{asset('assets/img/events/e2.png')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Foot Ball Championship</h5>
@@ -190,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             
         </div>
     </div>

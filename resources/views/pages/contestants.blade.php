@@ -10,13 +10,16 @@
             </div>
         </div>
         <div class="container contestants-area2">
+            @foreach ($contestants as $contestant)
             <div class="image-container">
-                <a href="{{route('page.contestantdetail')}}">
+                <a href="{{route('page.contestantdetail,$contestant->slug')}}">
                     <img src="assets/img/contestants/c1.png" alt="">
-                    <h4>Sport <br> players</h4>
+                    <h4>{{$contestant->title}}</h4>
                 </a>
             </div>
-            <div class="image-container">
+            @endforeach
+            
+           {{--   <div class="image-container">
                 <a href="{{route('page.contestantdetail')}}">
                     <img src="assets/img/contestants/c2.png" alt="">
                     <h4>Professional players</h4>
@@ -39,7 +42,7 @@
                     <img src="assets/img/contestants/c5.png" alt="">
                     <h4>All Gender Stars</h4>
                 </a>
-            </div>
+            </div>--}}
         </div>
         <div class="container my-4">
             <h5>Spark a passion for sports at a young age! We offer fun and engaging programs designed to develop skills

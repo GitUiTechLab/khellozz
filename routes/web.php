@@ -13,32 +13,35 @@ use App\Http\Controllers\pages\RegisterTwoController;
 use App\Http\Controllers\pages\SportDetailController;
 use App\Http\Controllers\pages\GalleryController;
 use App\Http\Controllers\pages\MediaController;
-use App\Http\Controllers\pages\BlogDetailController;
 use App\Http\Controllers\pages\ContestantDetailController;
 use App\Http\Controllers\pages\PlayerAchievementDetailController;
 
 // pages.view routes
-Route::get('/',[IndexController::class,'Home'])->name('page.homepage');
-Route::get('/about',[AboutController::class,'About'])->name('page.about');
-Route::get('/sport',[SportController::class,'Sports'])->name('page.sports');
-Route::get('/event',[EventController::class,'Events'])->name('page.events');
-Route::get('/contestant',[ContestantController::class,'Contestants'])->name('page.contestants');
-Route::get('/playerAchievement',[PlayerAchievementController::class,'PlayerAchievements'])->name('page.playerAchievement');
-Route::get('/blog',[BlogController::class,'Blog'])->name('page.blog');
-Route::get('/contact',[ContactController::class,'Contact'])->name('page.contact');
-Route::get('/registerone',[RegisterOneController::class,'Register'])->name('page.registerone');
-Route::get('/registertwo',[RegisterTwoController::class,'RegisterTwo'])->name('page.registertwo');
-Route::get('/sportdetail',[SportDetailController::class,'SportDetail'])->name('page.sportdetail');
-Route::get('/gallery',[GalleryController::class,'Gallery'])->name('page.gallery');
-Route::get('/media',[MediaController::class,'Media'])->name('page.media');
-Route::get('/blogdetail',[BlogDetailController::class,'BlogDetail'])->name('page.blogdetail');
-Route::get('/contestantdetail',[ContestantDetailController::class,'ContestantDetail'])->name('page.contestantdetail');
-Route::get('/playerachievementdetail',[PlayerAchievementDetailController::class,'PlayerAchievementDetail'])->name('page.playerachievementdetail');
+Route::get('/', [IndexController::class, 'Home'])->name('page.homepage');
+Route::get('/about', [AboutController::class, 'About'])->name('page.about');
+Route::get('/sport', [SportController::class, 'index'])->name('page.sports');
+Route::get('/sport/{slug}', [SportController::class, 'show'])->name('page.sportdetail');
+Route::get('/event', [EventController::class, 'index'])->name('page.events');
+Route::get('/contestant', [ContestantController::class, 'index'])->name('page.contestants');
+Route::get('/contestant/{slug}', [ContestantDetailController::class, 'show'])->name('page.contestantdetail');
+Route::get('/playerAchievement', [PlayerAchievementController::class, 'PlayerAchievements'])->name('page.playerAchievement');
+Route::get('/blog', [BlogController::class, 'index'])->name('page.blog');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('page.blogdetail');
+
+Route::get('/contact', [ContactController::class, 'Contact'])->name('page.contact');
+Route::get('/registerone', [RegisterOneController::class, 'Register'])->name('page.registerone');
+Route::get('/registertwo', [RegisterTwoController::class, 'RegisterTwo'])->name('page.registertwo');
+
+Route::get('/gallery', [GalleryController::class, 'Gallery'])->name('page.gallery');
+Route::get('/media', [MediaController::class, 'Media'])->name('page.media');
+
+
+Route::get('/playerachievementdetail', [PlayerAchievementDetailController::class, 'PlayerAchievementDetail'])->name('page.playerachievementdetail');
 
 
 // pages.view routes end
 
-// Route::redirect('/', '/login');
+//Route::redirect('/', '/login');
 Route::get('/home', function () {
     if (session('status')) {
         return redirect()->route('admin.home')->with('status', session('status'));

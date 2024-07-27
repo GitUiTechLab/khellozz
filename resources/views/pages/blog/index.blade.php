@@ -10,7 +10,23 @@
                 accusantium, corporis nobis quod animi ratione iste voluptas? Lorem ipsum dolor sit amet.</p>
         </div>
         <div class="card-container">
+            @foreach ($blogdata as $data)
             <div class="card">
+                <img height="250" src="{{asset($data->imageUrl)}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="card-info">
+                        <p>By Admin</p>
+                        <p class="card-date"><i class="fa-solid fa-calendar"></i>
+                            {{$data->date}}</p>
+                    </div>
+                    <h5 class="card-title">{{$data->title}}</h5>
+                    <p class="card-text">{{ Str::limit($data->description, 150) }}</p>
+                    <a class="btn-trans w-100" href="{{ route('page.blogdetail',$data->slug) }}"><span>Read More</span><i class="fa-solid fa-arrow-right-long ms-3"></i></a>
+                </div>
+            </div>
+            @endforeach
+           
+            {{-- <div class="card">
                 <img height="250" src="assets/img/blogs/1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <div class="card-info">
@@ -121,24 +137,10 @@
                         adipisicing elit. Laboriosam, earum.</p>
                     <a class="btn-trans w-100" href="{{route('page.blogdetail')}}"><span>Read More</span><i class="fa-solid fa-arrow-right-long ms-3"></i></a>
                 </div>
-            </div>
-            <div class="card">
-                <img height="250" src="assets/img/blogs/1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="card-info">
-                        <p>By Admin</p>
-                        <p class="card-date"><i class="fa-solid fa-calendar"></i>
-                            Jan 06, 2024</p>
-                    </div>
-                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Laboriosam, earum.</p>
-                    <a class="btn-trans w-100" href="{{route('page.blogdetail')}}"><span>Read More</span><i class="fa-solid fa-arrow-right-long ms-3"></i></a>
-                </div>
-            </div>
+            </div> --}}
         </div>
         <div class="text-center mt-5">
-            <a href="register1.html"><button class="btn-red" data-text="Register Now">Register Now</button></a>
+            <a href="{{route('page.registerone')}}"><button class="btn-red" data-text="Register Now">Register Now</button></a>
         </div>
     </div>
 </div>

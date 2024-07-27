@@ -2,7 +2,7 @@
     <div class="d-table">
         <div class="d-table-cell">
             <div class="pre-img">
-                <img src="assets/img/logo.png" alt="Logo">
+                <img src="{{asset('assets/img/logo.png')}}" alt="Logo">
             </div>
             <div class="spinner">
                 <div class="circle1"></div>

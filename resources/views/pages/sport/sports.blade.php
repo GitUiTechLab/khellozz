@@ -9,16 +9,18 @@
                 <p>Discover a world of excitement with our diverse range of 15 games. Each sport offers a unique challenge and thrilling experience for athletes and enthusiasts alike. Join us to explore:</p>
             </div>
             <div class="card-container">
+                @foreach ($sports as $sport)
                 <div class="card">
-                    <img src="{{asset('assets/img/sports/1.png')}}" class="card-img-top" alt="...">
+                    <img src="{{$sport->imageUrl}}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <a href="{{route('page.sportdetail')}}"><span class="outline">View Details</span></a>
+                        <h5 class="card-title">{{$sport->title}}</h5>
+                        <p class="card-text">{{Str::limit($sport->description,150)}}</p>
+                        <a href="{{route('page.sportdetail',$sport->slug)}}"><span class="outline">View Details</span></a>
                     </div>
                 </div>
-                <div class="card">
+                @endforeach
+                
+               {{--  <div class="card">
                     <img src="{{asset('assets/img/sports/2.png')}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor sit</h5>
@@ -89,7 +91,7 @@
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                         <a href="{{route('page.sportdetail')}}"><span class="outline">View Details</span></a>
                     </div>
-                </div>
+                </div>  --}}
             </div>
             <div class="text-center mt-5">
                 <a href="{{route('page.registerone')}}"><button class="btn-red" data-text="Register Now">Register Now</button></a>
